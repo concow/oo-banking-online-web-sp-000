@@ -17,8 +17,12 @@ class Transfer
     end
   end
 
-  def execute_transaction
-    if !(@sender.valid?)
+  def execute_transaction       #executes a successful transaction between two accounts
+    if @sender.balance >
+
+
+
+    
       return "Transaction rejected. Please check your account balance."
     end
   end
