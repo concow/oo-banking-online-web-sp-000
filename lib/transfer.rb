@@ -18,7 +18,7 @@ class Transfer
   end
 
   def execute_transaction       #executes a successful transaction between two accounts
-    if @sender.balance >
+    if @sender.balance > @amount && @status == "pending"
 
 
 
