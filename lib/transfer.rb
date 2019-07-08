@@ -30,8 +30,8 @@ class Transfer
 
   def reverse_transfer
     if @status = "complete"           #condition if transaction was previously completed
-      @sender.balance += @amount      #reverse @amount
+      @sender.balance += @amount      #reverse @amount(s)
       @receiver.balance -= @amount
-      @status = "reversed"
+      @status = "reversed"            #update @status to reversed
   end
 end
