@@ -18,7 +18,9 @@ class Transfer
   end
 
   def execute_transaction       #executes a successful transaction between two accounts
-    if @sender.balance > @amount && @status == "pending"
+    if @sender.balance > @amount && @status == "pending"      #here @sender instance var is receiver of BankAccount balance method (attr_accessor) 
+      @sender.balance -= @amount
+      @receiver.balance
 
 
 
