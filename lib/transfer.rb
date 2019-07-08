@@ -24,6 +24,6 @@ class Transfer
       @status = "complete"
     else                                    #rejects a transfer if the @sender account is not valid
       @status = "rejected"
-      return "Transaction rejected. Please check your account balance."
+        return "Transaction rejected. Please check your account balance."
     end
 end
