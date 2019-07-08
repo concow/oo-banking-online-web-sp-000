@@ -33,5 +33,6 @@ class Transfer
       @sender.balance += @amount      #reverse @amount(s)
       @receiver.balance -= @amount
       @status = "reversed"            #update @status to reversed
+    end
   end
 end
